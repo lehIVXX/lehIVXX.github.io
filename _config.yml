@@ -2,3 +2,24 @@ theme: jekyll-theme-cayman
 layout: page
 title: "synth"
 permalink: /index/
+application: midiwasynth
+version: 1
+runtime: python27
+api_version: 1
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index\.html
+
+- url: /js
+  static_dir: js
+
+- url: /lib
+  static_dir: lib
+
+- url: /styles
+  static_dir: styles
+
+- url: /sounds
+  static_dir: sounds
